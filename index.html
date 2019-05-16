@@ -6,39 +6,48 @@
 <title>Rock Paper Scissors Part 2
 </title>
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/styles/style.css">
 
 <body>
 
-<div class='container'>
+
     <div class='scroll-box'>
         <h2 class='scroll'>ROCK PAPER SCISSORS</h2>
     </div>
 
 
-    <div class='intro'>
-        <div class='line'></div>
-        <p>Type 'r' for rock, 'p' for paper, or 's' for scissors and see if you can beat the computer!</p>
-        <div class='line'></div>
-    </div>
+<div class='intro'>
+    <div class='line'></div>
+    <p>Type 'r' for rock, 'p' for paper, or 's' for scissors and see if you can beat the computer!</p>
+    <div class='line'></div>
+</div>
 
-    <div id="game"></div>
-        <div class='scores'>
+<div class='container'>
+    <div class="row justify-content-md-center">
+        <div class='col col-md-4'>
+
+
+            <div class='userImage'>
+                <h3>Your choice:</h3>
+                <img src="" alt="" id='userPic'>
+            </div>
+        </div>
+
+        <div class='col col-md-4'>
+            <!-- <div class='scores'> -->
             <p>User Wins: <span id='userWins'>0</span></p>
             <p>Computer Wins: <span id='computerWins'>0</span></p>
             <p>Ties: <span id='tieHTML'>0</span></p>
+            <!-- </div> -->
         </div>
 
-        <div class='userImage'>
-            <h3>Your choice:</h3>
-            <img src="" alt="" id='userPic'>
+        <div class='col col-md-4'>
+            <div class='computerImage'>
+                <h3>Computer's choice:</h3>
+                <img src="" alt="" id='compPic'>
+            </div>
         </div>
-
-        <div class='computerImage'>
-            <h3>Computer's choice:</h3>
-            <img src="" alt="" class='compPic'>
-        </div>
-
     </div>
 </div>
 
